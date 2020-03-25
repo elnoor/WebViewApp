@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Caps-Az.com</string>
+    <string name="error_msg_not_connected">Cihazınız internetə qoşulu deyil</string>
+    <string name="refresh">Yenilə</string>
+    <string name="msg_downloading">Fayl yüklənilir...</string>
+    <string name="msg_loading_wait">Yüklənir, gözləyin...</string>
+    <string name="error_not_valid_base64">Error! Not a valid base64!</string>
+    <string name="error_downloading">Fayl yüklənərkən xəta baş verdi!</string>
+    <string name="msg_file_downloaded">Fayl yüklənildi</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.noorr.capsazcom.MainActivity">
+
+    <WebView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/webView" />
+
+
+    <LinearLayout
+        android:id="@+id/errorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:layout_width="168dp"
+            android:layout_height="166dp"
+            android:id="@+id/imageView"
+            android:src="@mipmap/no_connection"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="top|center_horizontal"
+            android:alpha="0.6"
+            android:adjustViewBounds="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/error_msg_not_connected"
+            android:id="@+id/textView_NotConnected"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.08"
+            android:textSize="18dp"
+            android:textColor="#878787" />
+
+        <Button
+            android:id="@+id/btnReload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minWidth="120dp"
+            android:text="@string/refresh"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="btnReload_Click" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
